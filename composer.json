@@ -1,10 +1,16 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "annakarpova00/fleet-management-system",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Веб-приложение для управления автопарками компании, разработанное в соответствии с тестовым заданием",
+    "keywords": ["fleets", "cars", "access"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Anna Karpova",
+            "email": "anna.karpova0027@gmail.com"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "filament/filament": "^3.3",
@@ -57,7 +63,10 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "providers": [
+                "App\\Providers\\FleetServiceProvider"
+            ]
         }
     },
     "config": {
